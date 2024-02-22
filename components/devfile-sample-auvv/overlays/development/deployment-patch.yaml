@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-auvv
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0067-tenant/tkrw-pr712-0075-0067-app/devfile-sample-auvv@sha256:24034ee6ba2da0c1989c2b033c731272e0c65640b81a39709cde8420531131df
+        name: my-nodejs
+        resources: {}
+status: {}
